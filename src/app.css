@@ -1,110 +1,201 @@
-@import '@fontsource/raleway';
+@import '@fontsource-variable/raleway';
 @import '@fontsource/fredoka-one';
 @import '@fontsource/space-mono';
 
 html {
 	/* font */
-	--font-body: 'Raleway', sans-serif;
+	--font-body: 'Raleway Variable', sans-serif;
 	--font-title: 'Fredoka One', sans-serif;
 	--font-mono: 'Space Mono', monospace;
 
 	/* dark */
-	--brand-dark: var(--orange-3);
-	--text-1-dark: var(--gray-3);
-	--text-2-dark: var(--gray-5);
-	--surface-1-dark: var(--gray-12);
-	--surface-2-dark: var(--gray-11);
-	--surface-3-dark: var(--gray-10);
-	--surface-4-dark: var(--gray-9);
-	--background-dark: var(--gradient-8);
-	--border-dark: var(--gray-9);
+	--brand-dark-1: hsl(109 28% 45%);
+	--brand-dark-2: hsl(81 86% 78%);
+	--brand-dark-3: hsl(181 98% 83%);
+	--brand-dark-4: hsl(192 55% 64%);
+	--brand-dark-5: hsl(191 56% 24%);
+
+	--text-1-dark: hsl(218 27% 94%);
+	--text-2-dark: hsl(219 28% 88%);
+
+	--heading-1-dark: hsl(92 27% 60%);
+	--heading-2-dark: hsl(193 43% 67%);
+
+	--accent-1-dark: hsl(192 55% 64%);
+	--accent-2-dark: hsl(193 43% 47%);
+	--accent-3-dark: hsl(193 43% 35%);
+	--accent-4-dark: hsl(219 28% 88%);
+
+	--surface-1-dark: hsl(193 43% 25%);
+	--surface-2-dark: hsl(220 16% 36%);
+	--surface-3-dark: hsl(222 16% 28%);
+	--surface-4-dark: hsl(223 12% 12%);
+
+	--background-dark: hsl(220 16% 22%);
+	--border-dark: hsl(218 27% 94%);
+	--gradient-dark: linear-gradient(144deg, hsl(220deg 16% 22%) 60%, hsl(220deg 16% 12%) 100%);
+	--gradient-button-dark: linear-gradient(145deg, #292f3a, #313844);
 
 	/* light */
-	--brand-light: var(--orange-10);
-	--text-1-light: var(--gray-8);
-	--text-2-light: var(--gray-7);
-	--surface-1-light: var(--gray-0);
-	--surface-2-light: var(--gray-1);
-	--surface-3-light: var(--gray-2);
-	--surface-4-light: var(--gray-3);
-	--background-light: none;
-	--border-light: var(--gray-4);
+	--brand-light-1: hsl(93 28% 45%);
+	--brand-light-2: hsl(92 28% 65%);
+	--brand-light-3: hsl(193 43% 67%);
+	--brand-light-4: hsl(213 32% 52%);
+	--brand-light-5: hsl(95 16% 35%);
+
+	--text-1-light: hsl(194 41% 10%);
+	--text-2-light: hsl(218 27% 94%);
+
+	--heading-1-light: hsl(192 55% 44%);
+	--heading-2-light: hsl(109 28% 45%);
+
+	--accent-1-light: hsl(191 56% 24%);
+	--accent-2-light: hsl(92 27% 60%);
+	--accent-3-light: hsl(94 16% 30%);
+	--accent-4-light: hsl(179 25% 65%);
+
+	--surface-1-light: hsl(93 28% 25%);
+	--surface-2-light: hsl(220 16% 36%);
+	--surface-3-light: hsl(222 16% 28%);
+	--surface-4-light: hsl(220 16% 22%);
+
+	--background-light: hsl(53 60% 94%);
+	--border-light: hsl(220 16% 22%);
+	--gradient-light: linear-gradient(144deg, hsl(53deg 60% 92%) 0%, hsl(53deg 60% 98%) 100%);
+	--gradient-button-light: linear-gradient(145deg, #e0ded0, #fffdf1);
 }
 
 :root {
 	color-scheme: dark;
 
-	--brand: var(--brand-dark);
+	--brand-1: var(--brand-dark-1);
+	--brand-2: var(--brand-dark-2);
+	--brand-3: var(--brand-dark-3);
+	--brand-4: var(--brand-dark-4);
+	--brand-5: var(--brand-dark-5);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
+	--heading-1: var(--heading-1-dark);
+	--heading-2: var(--heading-2-dark);
+	--accent-1: var(--accent-1-dark);
+	--accent-2: var(--accent-2-dark);
+	--accent-3: var(--accent-3-dark);
+	--accent-4: var(--accent-4-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
 	--surface-4: var(--surface-4-dark);
 	--background: var(--background-dark);
+	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
+	--gradient-button: var(--gradient-button-dark);
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		color-scheme: light;
 
-		--brand: var(--brand-light);
+		--brand-1: var(--brand-light-1);
+		--brand-2: var(--brand-light-2);
+		--brand-3: var(--brand-light-3);
+		--brand-4: var(--brand-light-4);
+		--brand-5: var(--brand-light-5);
 		--text-1: var(--text-1-light);
 		--text-2: var(--text-2-light);
+		--heading-1: var(--heading-1-light);
+		--heading-2: var(--heading-2-light);
+		--accent-1: var(--accent-1-light);
+		--accent-2: var(--accent-2-light);
+		--accent-3: var(--accent-3-light);
+		--accent-4: var(--accent-4-light);
 		--surface-1: var(--surface-1-light);
 		--surface-2: var(--surface-2-light);
 		--surface-3: var(--surface-3-light);
 		--surface-4: var(--surface-4-light);
 		--background: var(--background-light);
+		--background-2: var(--gradient-light);
 		--border: var(--border-light);
+		--gradient-button: var(--gradient-button-light);
 	}
 }
 
 [color-scheme='dark'] {
 	color-scheme: dark;
 
-	--brand: var(--brand-dark);
+	--brand-1: var(--brand-dark-1);
+	--brand-2: var(--brand-dark-2);
+	--brand-3: var(--brand-dark-3);
+	--brand-4: var(--brand-dark-4);
+	--brand-5: var(--brand-dark-5);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
+	--heading-1: var(--heading-1-dark);
+	--heading-2: var(--heading-2-dark);
+	--accent-1: var(--accent-1-dark);
+	--accent-2: var(--accent-2-dark);
+	--accent-3: var(--accent-3-dark);
+	--accent-4: var(--accent-4-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
 	--surface-4: var(--surface-4-dark);
 	--background: var(--background-dark);
+	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
+	--gradient-button: var(--gradient-button-dark);
 }
 
 [color-scheme='light'] {
 	color-scheme: light;
 
-	--brand: var(--brand-light);
+	--brand-1: var(--brand-light-1);
+	--brand-2: var(--brand-light-2);
+	--brand-3: var(--brand-light-3);
+	--brand-4: var(--brand-light-4);
+	--brand-5: var(--brand-light-5);
 	--text-1: var(--text-1-light);
 	--text-2: var(--text-2-light);
+	--heading-1: var(--heading-1-light);
+	--heading-2: var(--heading-2-light);
+	--accent-1: var(--accent-1-light);
+	--accent-2: var(--accent-2-light);
+	--accent-3: var(--accent-3-light);
+	--accent-4: var(--accent-4-light);
 	--surface-1: var(--surface-1-light);
 	--surface-2: var(--surface-2-light);
 	--surface-3: var(--surface-3-light);
 	--surface-4: var(--surface-4-light);
 	--background: var(--background-light);
+	--background-2: var(--gradient-light);
 	--border: var(--border-light);
+	--gradient-button: var(--gradient-button-light);
 }
 
 html,
 body {
 	height: 100%;
+	font-family: var(--font-body);
+	font-weight: 500;
 }
 
 html {
 	color: var(--text-1);
 	accent-color: var(--link);
-	background-image: var(--background);
+	background-image: var(--background-2);
 	background-attachment: fixed;
 }
 
 img {
 	border-radius: var(--radius-3);
 }
-
+button {
+	padding: 0;
+	font-weight: inherit;
+	background: none;
+	border: none;
+	box-shadow: none;
+	overflow: hidden;
+}
 ul,
 ol {
 	list-style: none;
@@ -113,6 +204,12 @@ ol {
 
 li {
 	padding-inline-start: 0;
+}
+
+.title {
+	font-family: var(--font-title);
+	font-size: var(--size-6);
+	letter-spacing: 0.05em;
 }
 
 .surface-1 {
@@ -127,10 +224,10 @@ li {
 
 .surface-3 {
 	background-color: var(--surface-3);
-	color: var(--text-1);
+	color: var(--text-2);
 }
 
 .surface-4 {
 	background-color: var(--surface-4);
-	color: var(--text-1);
+	color: var(--text-2);
 }

@@ -6,6 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"deploy": "gh-pages -d build -t true",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
@@ -33,6 +34,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/raleway": "^5.0.17",
 		"@fontsource/fredoka-one": "^5.0.5",
 		"@fontsource/raleway": "^5.0.16",
 		"@fontsource/space-mono": "^5.0.18",

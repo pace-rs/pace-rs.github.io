@@ -26,10 +26,6 @@
 		padding-inline: var(--size-7);
 	}
 
-	main {
-		padding-block: var(--size-9);
-	}
-
 	@media (min-width: 1800px) {
 		.layout {
 			padding-inline: 0;
