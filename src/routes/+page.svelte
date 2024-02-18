@@ -9,18 +9,35 @@
 	<p class="sub-head">Track your time via the command line</p>
 </div>
 
+<div class="card-bg1">
+	<h2 class="card-heading">Easy Install via Cargo</h2>
+	<div>
+		<p>Run this command in your project directory</p>
+		<div class="code-block">
+			<p>user@project:~$</p>
+			<p>cargo add pace -rs</p>
+		</div>
+	</div>
+	<div>
+		<p>Or, add the following to your cargo.toml</p>
+		<div class="code-block">
+			<p>pace-rs = “0,3.0”$</p>
+		</div>
+	</div>
+</div>
+
 <style>
 	.grid {
 		display: grid;
 		justify-content: center;
 	}
 	.title {
-		font-size: 18rem;
+		font-size: 14rem;
 		letter-spacing: 0.05em;
 		line-height: 1.05;
 	}
 	.sub-head {
-		font-size: 2.75rem;
+		font-size: 2rem;
 		padding-left: 1rem;
 	}
 
@@ -62,27 +79,39 @@
 		color: var(--surface-2);
 		z-index: 2;
 	}
-	.neu-morph {
+	.card-bg1 {
 		border-radius: 36px;
-		background: linear-gradient(145deg, #e0ded0, #fffdf1);
+		margin-block: 4rem;
+		padding: 2rem;
+		background-image: var(--neumorph-card);
 		box-shadow:
+			47px 47px 94px #272c36,
+			-47px -47px 94px #353c4a;
+		/* box-shadow:
 			47px 47px 94px #cfcdc0,
-			-47px -47px 94px #fffdf1;
+			-47px -47px 94px #fffdf1; */
 	}
-
+	.card-heading {
+		font-size: 4rem;
+		color: var(--text-2);
+		letter-spacing: 0.05em;
+		margin-bottom: 2rem;
+	}
+	.code-block {
+		border-radius: var(--size-2);
+		padding: 2rem;
+		margin-bottom: 2rem;
+		background-color: var(--surface-2);
+		font-family: var(--font-mono);
+		font-size: 1.5rem;
+		color: var(--brand-3);
+	}
 	.neu-button {
 		border-radius: 12px;
 		background: linear-gradient(145deg, #e0ded0, #fffdf1);
 		box-shadow:
 			50px 50px 67px #d1cfc2,
 			-50px -50px 67px #fffdf1;
-	}
-	.neu-morph2 {
-		border-radius: 36px;
-		background: linear-gradient(145deg, #292f3a, #313844);
-		box-shadow:
-			47px 47px 94px #272c36,
-			-47px -47px 94px #353c4a;
 	}
 
 	.neu-button2 {

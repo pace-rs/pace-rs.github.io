@@ -7,13 +7,11 @@
 <button on:click={toggleTheme} aria-label="Toggle theme">
 	{#if $theme === 'dark'}
 		<div in:fly|global={{ y: 10 }}>
-			<Moon />
-			<span>dark</span>
+			<Moon size={32} />
 		</div>
 	{:else}
 		<div in:fly|global={{ y: -10 }}>
-			<Sun />
-			<span>light</span>
+			<Sun size={32} />
 		</div>
 	{/if}
 </button>
@@ -26,7 +24,7 @@
 		box-shadow:
 			50px 50px 67px #222730,
 			-50px -50px 67px #313844;
-		padding: 0.75rem 2rem;
+		padding: 0.75rem 1.75rem;
 		cursor: pointer;
 	}
 	button > * {

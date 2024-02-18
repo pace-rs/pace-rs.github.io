@@ -11,8 +11,9 @@
 	</a>
 	<div class="cta">
 		<Toggle />
-		<button class="neu-button"><DiscordLogo /> Discord</button>
-		<button class="neu-button"><GithubLogo /> Github</button>
+		<button class="neu-button">Docs</button>
+		<button class="neu-button"><DiscordLogo size={32} /></button>
+		<button class="neu-button"><GithubLogo size={32} /> </button>
 	</div>
 </nav>
 
@@ -23,7 +24,7 @@
 	.cta {
 		display: grid;
 		margin-block: 2rem;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
 	}
 	a {
@@ -43,10 +44,9 @@
 		box-shadow:
 			50px 50px 67px #222730,
 			-50px -50px 67px #313844;
-	}
-	button > * {
-		color: var(--test-2);
-		display: flex;
-		gap: var(--size-2);
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
 	}
 </style>
