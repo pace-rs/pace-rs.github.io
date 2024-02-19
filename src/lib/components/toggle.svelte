@@ -22,14 +22,9 @@
 		border-radius: var(--size-2);
 		background-image: var(--gradient-button);
 		box-shadow:
-			50px 50px 67px #222730,
-			-50px -50px 67px #313844;
+			50px 50px 67px var(--box-shadow-1),
+			-50px -50px 67px var(--box-shadow-2);
 		padding: 0.75rem 1.75rem;
 		cursor: pointer;
-	}
-	button > * {
-		color: var(--test-2);
-		display: flex;
-		gap: var(--size-2);
 	}
 </style>

@@ -11,21 +11,27 @@
 	</a>
 	<div class="cta">
 		<Toggle />
-		<button class="neu-button">Docs</button>
-		<button class="neu-button"><DiscordLogo size={32} /></button>
-		<button class="neu-button"><GithubLogo size={32} /> </button>
+		<button class="toggle-grid">Docs</button>
+		<button class="toggle-grid"><DiscordLogo size={32} /></button>
+		<button class="toggle-grid"><GithubLogo size={32} /> </button>
 	</div>
 </nav>
 
 <style>
 	nav {
-		padding-block: var(--size-7);
+		padding-block: var(--size-4);
 	}
 	.cta {
 		display: grid;
-		margin-block: 2rem;
+		margin-top: 2.75rem;
+		margin-bottom: 1rem;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
+		border-radius: var(--size-2);
+		background-image: var(--gradient-button);
+		box-shadow:
+			30px 30px 24px var(--box-shadow-1),
+			-20px -20px 24px var(--box-shadow-2);
 	}
 	a {
 		color: inherit;
@@ -38,12 +44,7 @@
 			justify-content: space-between;
 		}
 	}
-	.neu-button {
-		border-radius: var(--size-2);
-		background-image: var(--gradient-button);
-		box-shadow:
-			50px 50px 67px #222730,
-			-50px -50px 67px #313844;
+	.toggle-grid {
 		display: grid;
 		justify-content: center;
 		align-items: center;

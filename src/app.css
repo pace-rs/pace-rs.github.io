@@ -17,25 +17,28 @@ html {
 
 	--text-1-dark: hsl(218 27% 94%);
 	--text-2-dark: hsl(219 28% 88%);
+	--text-footer-dark: hsl(223 12% 12% / 0.8);
 
 	--heading-1-dark: hsl(92 27% 60%);
 	--heading-2-dark: hsl(193 43% 67%);
 
-	--accent-1-dark: hsl(192 55% 64%);
-	--accent-2-dark: hsl(193 43% 47%);
-	--accent-3-dark: hsl(193 43% 35%);
+	--accent-1-dark: hsl(192 55% 64% / 0.9);
+	--accent-2-dark: hsl(193 43% 47% / 0.8);
+	--accent-3-dark: hsl(193 43% 35% / 0.8);
 	--accent-4-dark: hsl(219 28% 88%);
 
 	--surface-1-dark: hsl(193 43% 25%);
 	--surface-2-dark: hsl(220 16% 36%);
 	--surface-3-dark: hsl(222 16% 28%);
-	--surface-4-dark: hsl(223 12% 12%);
+	--surface-4-dark: hsl(223 12% 12% / 0.8);
 
 	--background-dark: hsl(220 16% 22%);
 	--border-dark: hsl(218 27% 94%);
 	--gradient-dark: linear-gradient(144deg, hsl(220deg 16% 22%) 60%, hsl(220deg 16% 12%) 100%);
-	--gradient-button-dark: linear-gradient(145deg, #292f3a, #313844);
-	--neumorph-card-dark: linear-gradient(145deg, #292f3a, #313844);
+	--gradient-button-dark: linear-gradient(145deg, hsl(219 17% 19%), hsl(218 16% 23%));
+	--card-bg-dark: linear-gradient(145deg, hsl(219 17% 19% / 0.85), hsl(218 16% 23%));
+	--box-shadow-1-dark: hsl(219 17% 16% / 0.75);
+	--box-shadow-2-dark: hsl(218 16% 33% / 0.25);
 
 	/* light */
 	--brand-light-1: hsl(93 28% 45%);
@@ -46,6 +49,7 @@ html {
 
 	--text-1-light: hsl(194 41% 10%);
 	--text-2-light: hsl(218 27% 94%);
+	--text-footer-light: hsl(223 12% 12% / 0.8);
 
 	--heading-1-light: hsl(192 55% 44%);
 	--heading-2-light: hsl(109 28% 45%);
@@ -58,13 +62,15 @@ html {
 	--surface-1-light: hsl(93 28% 25%);
 	--surface-2-light: hsl(220 16% 36%);
 	--surface-3-light: hsl(222 16% 28%);
-	--surface-4-light: hsl(220 16% 22%);
+	--surface-4-light: hsl(220 16% 22% / 0.8);
 
 	--background-light: hsl(53 60% 94%);
 	--border-light: hsl(220 16% 22%);
 	--gradient-light: linear-gradient(144deg, hsl(53deg 60% 92%) 0%, hsl(53deg 60% 98%) 100%);
 	--gradient-button-light: linear-gradient(145deg, #e0ded0, #fffdf1);
-	--neumorph-card-light: linear-gradient(145deg, #e0ded0, #fffdf1);
+	--card-bg-light: linear-gradient(145deg, #e0ded0, #fffdf1);
+	--box-shadow-1-light: hsl(52 14% 79% / 0.75);
+	--box-shadow-2-light: hsl(51 100% 97% / 0.25);
 }
 
 :root {
@@ -91,7 +97,10 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--gradient-button: var(--gradient-button-dark);
-	--neumorph-card: var(--neumorph-card-dark);
+	--card-bg: var(--card-bg-dark);
+	--box-shadow-1: var(--box-shadow-1-dark);
+	--box-shadow-2: var(--box-shadow-2-dark);
+	--text-footer: var(--text-footer-dark);
 }
 
 @media (prefers-color-scheme: light) {
@@ -119,7 +128,10 @@ html {
 		--background-2: var(--gradient-light);
 		--border: var(--border-light);
 		--gradient-button: var(--gradient-button-light);
-		--neumorph-card: var(--neumorph-card-light);
+		--card-bg: var(--card-bg-light);
+		--box-shadow-1: var(--box-shadow-1-light);
+		--box-shadow-2: var(--box-shadow-2-light);
+		--text-footer: var(--text-footer-light);
 	}
 }
 
@@ -147,7 +159,10 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--gradient-button: var(--gradient-button-dark);
-	--neumorph-card: var(--neumorph-card-dark);
+	--card-bg: var(--card-bg-dark);
+	--box-shadow-1: var(--box-shadow-1-dark);
+	--box-shadow-2: var(--box-shadow-2-dark);
+	--text-footer: var(--text-footer-dark);
 }
 
 [color-scheme='light'] {
@@ -174,7 +189,10 @@ html {
 	--background-2: var(--gradient-light);
 	--border: var(--border-light);
 	--gradient-button: var(--gradient-button-light);
-	--neumorph-card: var(--neumorph-card-light);
+	--card-bg: var(--card-bg-light);
+	--box-shadow-1: var(--box-shadow-1-light);
+	--box-shadow-2: var(--box-shadow-2-light);
+	--text-footer: var(--text-footer-light);
 }
 
 html,
@@ -216,24 +234,4 @@ li {
 	font-family: var(--font-title);
 	font-size: var(--size-6);
 	letter-spacing: 0.05em;
-}
-
-.surface-1 {
-	background-color: var(--surface-1);
-	color: var(--text-2);
-}
-
-.surface-2 {
-	background-color: var(--surface-2);
-	color: var(--text-2);
-}
-
-.surface-3 {
-	background-color: var(--surface-3);
-	color: var(--text-2);
-}
-
-.surface-4 {
-	background-color: var(--surface-4);
-	color: var(--text-2);
 }

@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Accents from '$lib/components/accents.svelte';
+</script>
+
 <div class="grid">
 	<div class="fade">
 		<p class="fade-1 title">PACE</p>
@@ -9,27 +13,49 @@
 	<p class="sub-head">Track your time via the command line</p>
 </div>
 
-<div class="card-bg1">
-	<h2 class="card-heading">Easy Install via Cargo</h2>
-	<div>
-		<p>Run this command in your project directory</p>
-		<div class="code-block">
-			<p>user@project:~$</p>
-			<p>cargo add pace -rs</p>
+<body>
+	<div class="squares">
+		<Accents />
+	</div>
+	<div class="card-bg">
+		<h2 class="card-heading">Easy Install via Cargo</h2>
+		<div>
+			<p>Run this command in your project directory</p>
+			<div class="code-block">
+				<p class="code-text">
+					<span style="color: var(--brand-2);">user@project:~$</span>
+					cargo add pace -rs
+				</p>
+			</div>
+		</div>
+		<div>
+			<p>Or, add the following to your cargo.toml</p>
+			<div class="code-block">
+				<p>pace-rs = “0,3.0”</p>
+			</div>
 		</div>
 	</div>
-	<div>
-		<p>Or, add the following to your cargo.toml</p>
-		<div class="code-block">
-			<p>pace-rs = “0,3.0”$</p>
-		</div>
+
+	<div class="squares-2">
+		<Accents />
 	</div>
-</div>
+</body>
 
 <style>
+	.squares {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: -8rem;
+	}
+	.squares-2 {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 2rem;
+	}
 	.grid {
 		display: grid;
 		justify-content: center;
+		margin-block: var(--size-7);
 	}
 	.title {
 		font-size: 14rem;
@@ -40,7 +66,6 @@
 		font-size: 2rem;
 		padding-left: 1rem;
 	}
-
 	.fade {
 		position: relative;
 	}
@@ -79,17 +104,19 @@
 		color: var(--surface-2);
 		z-index: 2;
 	}
-	.card-bg1 {
+	.card-bg {
+		position: relative;
 		border-radius: 36px;
-		margin-block: 4rem;
+		margin: 4rem;
 		padding: 2rem;
-		background-image: var(--neumorph-card);
+		background-image: var(--card-bg);
 		box-shadow:
-			47px 47px 94px #272c36,
-			-47px -47px 94px #353c4a;
-		/* box-shadow:
-			47px 47px 94px #cfcdc0,
-			-47px -47px 94px #fffdf1; */
+			47px 47px 24px var(--box-shadow-1),
+			-47px -47px 40px var(--box-shadow-2);
+		z-index: 7;
+	}
+	.card-bg p {
+		font-size: 1.5rem;
 	}
 	.card-heading {
 		font-size: 4rem;
@@ -105,20 +132,5 @@
 		font-family: var(--font-mono);
 		font-size: 1.5rem;
 		color: var(--brand-3);
-	}
-	.neu-button {
-		border-radius: 12px;
-		background: linear-gradient(145deg, #e0ded0, #fffdf1);
-		box-shadow:
-			50px 50px 67px #d1cfc2,
-			-50px -50px 67px #fffdf1;
-	}
-
-	.neu-button2 {
-		border-radius: 12px;
-		background: linear-gradient(145deg, #292f3a, #313844);
-		box-shadow:
-			50px 50px 67px #222730,
-			-50px -50px 67px #313844;
 	}
 </style>
