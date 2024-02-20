@@ -2,17 +2,18 @@
 	import * as config from '$lib/config';
 	import Toggle from '$lib/components/toggle.svelte';
 	import { DiscordLogo, GithubLogo } from 'phosphor-svelte';
+	import { theme } from '$lib/theme';
 </script>
 
 <nav>
 	<a href="/" class="title">
-		<img src="Logo-Dark.png" alt="" />
+		<img src={$theme === 'dark' ? './Logo-Dark.png' : './Logo-Light.png'} alt="" />
 	</a>
 	<div class="cta">
 		<Toggle />
-		<button class="toggle-grid">Docs</button>
+		<button class="toggle-grid"><a href={config.docs}>Docs</a></button>
 		<button class="toggle-grid"><DiscordLogo size={32} /></button>
-		<button class="toggle-grid"><GithubLogo size={32} /> </button>
+		<button class="toggle-grid"><a href={config.github}><GithubLogo size={32} /></a></button>
 	</div>
 </nav>
 

@@ -8,12 +8,11 @@
 		<p class="fade-2 title">PACE</p>
 		<p class="fade-3 title">PACE</p>
 		<p class="fade-4 title">PACE</p>
-		<p class="fade-5 title">PACE</p>
 	</div>
 	<p class="sub-head">Track your time via the command line</p>
 </div>
 
-<body>
+<div>
 	<div class="squares">
 		<Accents />
 	</div>
@@ -39,7 +38,7 @@
 	<div class="squares-2">
 		<Accents />
 	</div>
-</body>
+</div>
 
 <style>
 	.squares {
@@ -72,38 +71,38 @@
 	.fade-1 {
 		position: relative;
 		top: 0px;
-		left: 32px;
+		left: 24px;
 		color: var(--brand-2);
 		z-index: 6;
 	}
 	.fade-2 {
 		position: absolute;
 		top: 8px;
-		left: 24px;
+		left: 16px;
 		color: var(--accent-2);
 		z-index: 5;
 	}
 	.fade-3 {
 		position: absolute;
 		top: 16px;
-		left: 16px;
+		left: 8px;
 		color: var(--accent-3);
 		z-index: 4;
 	}
 	.fade-4 {
 		position: absolute;
 		top: 24px;
-		left: 8px;
+		left: 0px;
 		color: var(--surface-1);
 		z-index: 3;
 	}
-	.fade-5 {
+	/* .fade-5 {
 		position: absolute;
 		top: 32px;
 		left: 0px;
 		color: var(--surface-2);
 		z-index: 2;
-	}
+	} */
 	.card-bg {
 		position: relative;
 		border-radius: 36px;
