@@ -10,14 +10,14 @@ html {
 
 	/* dark */
 	--brand-dark-1: hsl(109 28% 45%);
-	--brand-dark-2: hsl(81 86% 78%);
+	--brand-dark-2: hsl(193 43% 67%);
 	--brand-dark-3: hsl(181 98% 83%);
-	--brand-dark-4: hsl(192 55% 64%);
+	--brand-dark-4: hsl(81 86% 78%);
 	--brand-dark-5: hsl(191 56% 24%);
 
 	--text-1-dark: hsl(218 27% 94%);
 	--text-2-dark: hsl(219 28% 88%);
-	--text-footer-dark: hsl(223 12% 12% / 0.8);
+	--text-footer-dark: hsl(218 27% 94%);
 
 	--heading-1-dark: hsl(92 27% 60%);
 	--heading-2-dark: hsl(193 43% 67%);
@@ -25,7 +25,7 @@ html {
 	--accent-1-dark: hsl(192 55% 64% / 0.9);
 	--accent-2-dark: hsl(193 43% 47% / 0.8);
 	--accent-3-dark: hsl(193 43% 35% / 0.8);
-	--accent-4-dark: hsl(219 28% 88%);
+	--accent-4-dark: hsl(220 16% 36%);
 
 	--surface-1-dark: hsl(193 43% 25%);
 	--surface-2-dark: hsl(220 16% 36%);
@@ -47,26 +47,26 @@ html {
 	--brand-light-4: hsl(213 32% 52%);
 	--brand-light-5: hsl(95 16% 35%);
 
-	--text-1-light: hsl(194 41% 10%);
-	--text-2-light: hsl(218 27% 94%);
-	--text-footer-light: hsl(223 12% 12% / 0.8);
+	--text-1-light: hsl(92 28% 10%);
+	--text-2-light: hsl(220 16% 36%);
+	--text-footer-light: hsl(218 27% 94%);
 
-	--heading-1-light: hsl(192 55% 44%);
-	--heading-2-light: hsl(109 28% 45%);
+	--heading-1-light: hsl(109 28% 45%);
+	--heading-2-light: hsl(192 55% 44%);
 
-	--accent-1-light: hsl(191 56% 24%);
-	--accent-2-light: hsl(92 27% 60%);
-	--accent-3-light: hsl(94 16% 30%);
-	--accent-4-light: hsl(179 25% 65%);
+	--accent-1-light: hsl(92 28% 65% / 0.9);
+	--accent-2-light: hsl(93 28% 45% / 0.8);
+	--accent-3-light: hsl(94 16% 30% / 0.8);
+	--accent-4-light: hsl(94 16% 30% / 0.8);
 
-	--surface-1-light: hsl(93 28% 25%);
-	--surface-2-light: hsl(220 16% 36%);
-	--surface-3-light: hsl(222 16% 28%);
-	--surface-4-light: hsl(220 16% 22% / 0.8);
+	--surface-1-light: hsl(93 28% 25% / 0.8);
+	--surface-2-light: hsl(222 16% 28%);
+	--surface-3-light: hsl(220 16% 36%);
+	--surface-4-light: hsl(92 28% 65% / 0.9);
 
 	--background-light: hsl(53 60% 94%);
 	--border-light: hsl(220 16% 22%);
-	--gradient-light: linear-gradient(144deg, hsl(53deg 60% 92%) 0%, hsl(53deg 60% 98%) 100%);
+	--gradient-light: linear-gradient(144deg, hsl(53deg 60% 94%) 20%, hsl(53deg 60% 90%) 100%);
 	--gradient-button-light: linear-gradient(145deg, #e0ded0, #fffdf1);
 	--card-bg-light: linear-gradient(145deg, #e0ded0, #fffdf1);
 	--box-shadow-1-light: hsl(52 14% 79% / 0.75);

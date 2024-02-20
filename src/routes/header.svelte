@@ -2,12 +2,11 @@
 	import * as config from '$lib/config';
 	import Toggle from '$lib/components/toggle.svelte';
 	import { DiscordLogo, GithubLogo } from 'phosphor-svelte';
-	import { ModuleNode } from 'vite';
 </script>
 
 <nav>
 	<a href="/" class="title">
-		<img src="Logo.png" alt="" />
+		<img src="Logo-Dark.png" alt="" />
 	</a>
 	<div class="cta">
 		<Toggle />

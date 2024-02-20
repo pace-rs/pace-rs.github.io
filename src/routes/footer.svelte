@@ -23,11 +23,11 @@
 		padding-block: var(--size-6);
 		padding-inline: 5rem;
 		border-radius: var(--size-3) var(--size-3) 0 0;
-		background-color: var(--surface-2);
+		background-color: var(--accent-4);
 	}
 
 	p {
-		color: var(--text-1);
+		color: var(--text-footer);
 		padding-left: 1rem;
 	}
 	.card {
@@ -38,6 +38,9 @@
 		max-width: 40%;
 		margin-bottom: -1rem;
 		z-index: 2;
+	}
+	.card p {
+		color: var(--text-1);
 	}
 	.highlight {
 		color: var(--accent-1);

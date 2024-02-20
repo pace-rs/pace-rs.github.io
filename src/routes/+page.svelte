@@ -73,7 +73,7 @@
 		position: relative;
 		top: 0px;
 		left: 32px;
-		color: var(--heading-2);
+		color: var(--brand-2);
 		z-index: 6;
 	}
 	.fade-2 {

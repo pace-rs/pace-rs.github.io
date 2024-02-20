@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { Sun, Moon } from 'phosphor-svelte';
-	import { theme, toggleTheme } from '$lib/theme';
+	import { theme, toggleTheme, setTheme } from '$lib/theme';
 </script>
 
 <button on:click={toggleTheme} aria-label="Toggle theme">
 	{#if $theme === 'dark'}
 		<div in:fly|global={{ y: 10 }}>
-			<Moon size={32} />
+			<Sun size={32} />
 		</div>
 	{:else}
 		<div in:fly|global={{ y: -10 }}>
-			<Sun size={32} />
+			<Moon size={32} />
 		</div>
 	{/if}
 </button>
