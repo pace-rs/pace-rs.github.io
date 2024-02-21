@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/pace-rs.github.io'
+          BASE_PATH: 'pace-rs/pace-rs.github.io'
         run: |
           pnpm run build
           touch build/.nojekyll
