@@ -62,6 +62,10 @@
 	a {
 		color: var(--text-footer);
 	}
+	a:hover {
+		transition: all 150ms ease-in-out;
+		color: var(--accent-1);
+	}
 	p {
 		color: var(--text-footer);
 		padding-left: 1rem;

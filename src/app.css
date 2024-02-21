@@ -37,6 +37,7 @@ html {
 	--border-dark: hsl(218 27% 94%);
 	--gradient-dark: linear-gradient(144deg, hsl(220deg 16% 22%) 60%, hsl(220deg 16% 12%) 90%);
 	--gradient-button-dark: linear-gradient(145deg, hsl(219 17% 19%), hsl(218 16% 23%));
+	--gradient-button-2-dark: linear-gradient(145deg, hsl(218 16% 23%), hsl(219 17% 19%));
 	--card-bg-dark: linear-gradient(145deg, hsl(219 17% 19% / 0.85), hsl(218 16% 23%));
 	--box-shadow-1-dark: hsl(219 17% 16% / 0.75);
 	--box-shadow-2-dark: hsl(218 16% 33% / 0.25);
@@ -70,6 +71,7 @@ html {
 	--border-light: hsl(240, 33%, 1%);
 	--gradient-light: linear-gradient(144deg, hsl(53deg 60% 94%) 20%, hsl(53deg 60% 90%) 90%);
 	--gradient-button-light: linear-gradient(145deg, hsl(53 21% 85%), hsl(51 100% 96%));
+	--gradient-button-2-light: linear-gradient(145deg, hsl(51 100% 96%), hsl(53 21% 85%));
 	--card-bg-light: linear-gradient(145deg, hsl(53 21% 85% / 0.85), hsl(51 100% 96%));
 	--box-shadow-1-light: hsl(52 14% 79% / 0.75);
 	--box-shadow-2-light: hsl(51 100% 97% / 0.25);
@@ -100,6 +102,7 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--gradient-button: var(--gradient-button-dark);
+	--gradient-button-2: var(--gradient-button-2-dark);
 	--card-bg: var(--card-bg-dark);
 	--box-shadow-1: var(--box-shadow-1-dark);
 	--box-shadow-2: var(--box-shadow-2-dark);
@@ -132,6 +135,7 @@ html {
 		--background-2: var(--gradient-light);
 		--border: var(--border-light);
 		--gradient-button: var(--gradient-button-light);
+		--gradient-button-2: var(--gradient-button-2-light);
 		--card-bg: var(--card-bg-light);
 		--box-shadow-1: var(--box-shadow-1-light);
 		--box-shadow-2: var(--box-shadow-2-light);
@@ -164,6 +168,7 @@ html {
 	--background-2: var(--gradient-dark);
 	--border: var(--border-dark);
 	--gradient-button: var(--gradient-button-dark);
+	--gradient-button-2: var(--gradient-button-2-dark);
 	--card-bg: var(--card-bg-dark);
 	--box-shadow-1: var(--box-shadow-1-dark);
 	--box-shadow-2: var(--box-shadow-2-dark);
@@ -195,6 +200,7 @@ html {
 	--background-2: var(--gradient-light);
 	--border: var(--border-light);
 	--gradient-button: var(--gradient-button-light);
+	--gradient-button-2: var(--gradient-button-2-light);
 	--card-bg: var(--card-bg-light);
 	--box-shadow-1: var(--box-shadow-1-light);
 	--box-shadow-2: var(--box-shadow-2-light);

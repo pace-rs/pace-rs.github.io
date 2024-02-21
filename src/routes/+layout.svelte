@@ -19,14 +19,14 @@
 <style>
 	.layout {
 		height: 100%;
-		max-inline-size: 1800px;
+		max-inline-size: 1600px;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		margin-inline: auto;
-		padding-inline: var(--size-7);
+		padding-inline: 2rem;
 	}
 
-	@media (min-width: 1800px) {
+	@media (min-width: 1664px) {
 		.layout {
 			padding-inline: 0;
 		}

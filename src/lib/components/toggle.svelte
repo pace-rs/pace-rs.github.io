@@ -24,7 +24,7 @@
 		box-shadow:
 			50px 50px 67px var(--box-shadow-1),
 			-50px -50px 67px var(--box-shadow-2);
-		padding: 0.75rem 1.75rem;
+		padding: 0.75rem 2rem;
 		cursor: pointer;
 	}
 </style>

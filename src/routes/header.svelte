@@ -26,7 +26,7 @@
 		margin-top: 2.75rem;
 		margin-bottom: 1rem;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
+		/* gap: 1rem; */
 		border-radius: var(--size-2);
 		background-image: var(--gradient-button);
 		box-shadow:
@@ -49,5 +49,14 @@
 		justify-content: center;
 		align-items: center;
 		font-size: 1.5rem;
+		padding-inline: 1.25rem;
+	}
+	.toggle-grid:hover {
+		transition: all 250ms ease-in-out;
+		border-radius: var(--size-2);
+		background-image: var(--gradient-button);
+		box-shadow:
+			30px 30px 24px var(--box-shadow-1),
+			-20px -20px 24px var(--box-shadow-2);
 	}
 </style>
