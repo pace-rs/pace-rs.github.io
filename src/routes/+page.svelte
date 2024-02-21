@@ -96,13 +96,7 @@
 		color: var(--surface-1);
 		z-index: 3;
 	}
-	/* .fade-5 {
-		position: absolute;
-		top: 32px;
-		left: 0px;
-		color: var(--surface-2);
-		z-index: 2;
-	} */
+
 	.card-bg {
 		position: relative;
 		border-radius: 36px;
