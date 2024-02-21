@@ -1,12 +1,13 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import { base } from '$app/paths';
 	import Toggle from '$lib/components/toggle.svelte';
 	import { DiscordLogo, GithubLogo } from 'phosphor-svelte';
 	import { theme } from '$lib/theme';
 </script>
 
 <nav>
-	<a href="/" class="title">
+	<a href="{base}/" class="title">
 		<img src={$theme === 'dark' ? './Logo-Dark.png' : './Logo-Light.png'} alt="" />
 	</a>
 	<div class="cta">

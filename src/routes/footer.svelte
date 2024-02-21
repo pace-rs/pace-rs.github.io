@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import { base } from '$app/paths';
 	import { DiscordLogo, GithubLogo } from 'phosphor-svelte';
 	import { theme } from '$lib/theme';
 </script>
@@ -8,7 +9,7 @@
 	<div class="card">
 		<div>
 			<p>
-				copyright &copy <span class="highlight"><a href="/">PACE</a></span>
+				copyright &copy <span class="highlight"><a href="{base}/">PACE</a></span>
 				{new Date().getFullYear()} // all rights reserved
 			</p>
 			<p>app: <span class="highlight">Simonsan</span></p>
@@ -28,7 +29,7 @@
 <footer>
 	<div class="footer-nav">
 		<a href={config.docs}>Docs</a>
-		<a href="/"><DiscordLogo size={32} /></a>
+		<a href="{base}/"><DiscordLogo size={32} /></a>
 		<a href={config.github}><GithubLogo size={32} /> </a>
 	</div>
 	<div class="tag-grid">
