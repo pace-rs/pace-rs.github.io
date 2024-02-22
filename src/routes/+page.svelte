@@ -50,6 +50,7 @@
 		display: flex;
 		justify-content: flex-end;
 		padding-right: 2rem;
+		margin-bottom: 8rem;
 	}
 	.grid {
 		display: grid;
@@ -96,7 +97,6 @@
 		color: var(--surface-1);
 		z-index: 3;
 	}
-
 	.card-bg {
 		position: relative;
 		border-radius: 36px;
@@ -125,5 +125,32 @@
 		font-family: var(--font-mono);
 		font-size: 1.5rem;
 		color: var(--brand-3);
+	}
+	@media (max-width: 770px) {
+		.title {
+			font-size: 6.5rem;
+			line-height: 1.25;
+		}
+		.sub-head {
+			font-size: 1rem;
+		}
+		.squares {
+			margin-bottom: -3rem;
+			margin-left: -1.5rem;
+		}
+		.card-bg {
+			border-radius: 36px;
+			margin: 1rem;
+		}
+		.card-bg p {
+			font-size: 1rem;
+		}
+		.card-heading {
+			font-size: 2rem;
+		}
+		.code-block {
+			padding: 1rem;
+			font-size: 1rem;
+		}
 	}
 </style>

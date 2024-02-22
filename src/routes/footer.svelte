@@ -5,7 +5,7 @@
 	import { theme } from '$lib/theme';
 </script>
 
-<div class="flex">
+<div class="top-bar">
 	<div class="card">
 		<div>
 			<p>
@@ -18,7 +18,7 @@
 			</p>
 		</div>
 	</div>
-	<div>
+	<div class="card-2">
 		<img
 			class="brand"
 			src={$theme === 'dark' ? './Brand-Dark.png' : './Brand-Light.png'}
@@ -26,7 +26,7 @@
 		/>
 	</div>
 </div>
-<footer>
+<footer class="bottom-bar">
 	<div class="footer-nav">
 		<a href={config.docs}>Docs</a>
 		<a href="{base}/"><DiscordLogo size={32} /></a>
@@ -39,27 +39,6 @@
 </footer>
 
 <style>
-	.flex {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-	}
-	footer {
-		display: flex;
-		justify-content: space-between;
-		padding-inline: 5rem;
-		border-radius: var(--size-3) var(--size-3) 0 0;
-		background-color: var(--accent-4);
-	}
-	.footer-nav {
-		padding-left: 1rem;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-items: start;
-		align-items: center;
-		gap: 2rem;
-		padding-top: 1rem;
-	}
 	a {
 		color: var(--text-footer);
 	}
@@ -69,14 +48,18 @@
 	}
 	p {
 		color: var(--text-footer);
-		padding-left: 1rem;
+	}
+	.top-bar {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		justify-items: center;
+		align-items: end;
 	}
 	.card {
 		background-color: var(--surface-4);
 		padding: 1rem;
-		margin-left: 4rem;
 		border-radius: var(--size-3);
-		max-width: 40%;
 		margin-bottom: -1rem;
 		z-index: 2;
 	}
@@ -86,33 +69,89 @@
 	.card a {
 		color: var(--accent-5);
 	}
+	.card-2 {
+		position: relative;
+		z-index: 3;
+	}
+	.bottom-bar {
+		display: flex;
+		justify-content: space-between;
+		border-radius: var(--size-3) var(--size-3) 0 0;
+		background-color: var(--accent-4);
+	}
+	.footer-nav {
+		padding-inline: 1rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		justify-items: center;
+		align-items: center;
+		justify-content: start;
+		padding-top: 1rem;
+	}
 	.highlight {
 		color: var(--accent-5);
 		font-family: var(--font-title);
 	}
-	.brand {
-		padding-right: 8rem;
-		margin-bottom: -1rem;
-		position: relative;
-		z-index: 2;
-	}
 	.tag-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		justify-items: center;
-		padding-right: 1rem;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
 	}
 	.logo-tagline {
 		font-family: var(--font-title);
 		font-size: 3rem;
 		padding-top: 1rem;
+		justify-self: end;
 	}
 	.logo-text {
 		font-size: 3rem;
 		color: var(--accent-1);
 		background-color: var(--background);
-		padding-inline: 1rem;
-		align-self: stretch;
+		justify-self: start;
 		padding-top: 1rem;
+	}
+
+	@media (min-width: 701px) {
+		.card-2 {
+			justify-self: end;
+			padding-right: 2.5rem;
+			margin-bottom: -1rem;
+			position: relative;
+			z-index: 2;
+		}
+		.logo-text {
+			padding-inline: 1rem;
+		}
+	}
+	@media (max-width: 700px) {
+		.top-bar {
+			grid-template-columns: 1fr;
+			align-items: center;
+			justify-content: center;
+		}
+		.card {
+			order: 1;
+			margin-bottom: -0.5rem;
+			z-index: 2;
+		}
+		.card-2 {
+			margin-bottom: -0.5rem;
+		}
+		.bottom-bar {
+			flex-direction: column;
+		}
+		.footer-nav {
+			padding-top: 2rem;
+		}
+		.logo-text {
+			font-size: 2rem;
+			background-color: transparent;
+		}
+		.logo-tagline {
+			font-size: 2rem;
+		}
 	}
 </style>

@@ -8,7 +8,7 @@
 
 <nav>
 	<a href="{base}/" class="title">
-		<img src={$theme === 'dark' ? './Logo-Dark.png' : './Logo-Light.png'} alt="" />
+		<img src={$theme === 'dark' ? './Logo-Dark.png' : './Logo-Light.png'} alt="logo" />
 	</a>
 	<div class="cta">
 		<Toggle />
@@ -20,29 +20,39 @@
 
 <style>
 	nav {
+		justify-content: space-between;
+		/* position: relative; */
 		padding-block: var(--size-4);
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
 	}
 	.cta {
 		display: grid;
+		align-items: space-between;
 		margin-top: 2.75rem;
 		margin-bottom: 1rem;
-		grid-template-columns: repeat(4, 1fr);
-		/* gap: 1rem; */
+		gap: 1rem;
 		border-radius: var(--size-2);
 		background-image: var(--gradient-button);
 		box-shadow:
 			30px 30px 24px var(--box-shadow-1),
 			-20px -20px 24px var(--box-shadow-2);
 	}
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	@media (min-width: 768px) {
+	@media (min-width: 770px) {
 		nav {
 			display: flex;
 			justify-content: space-between;
+		}
+		.cta {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 0;
+		}
+	}
+	@media (max-width: 770px) {
+		.toggle-grid {
+			padding-block: 2rem;
 		}
 	}
 	.toggle-grid {
@@ -59,5 +69,7 @@
 		box-shadow:
 			30px 30px 24px var(--box-shadow-1),
 			-20px -20px 24px var(--box-shadow-2);
+	}
+	@media (max-width: 770px) {
 	}
 </style>

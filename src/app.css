@@ -244,6 +244,5 @@ li {
 
 .title {
 	font-family: var(--font-title);
-	font-size: var(--size-6);
 	letter-spacing: 0.05em;
 }
