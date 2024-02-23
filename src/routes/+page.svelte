@@ -11,9 +11,22 @@
 	<div class="card-bg">
 		<h2 class="card-heading">Install PACE</h2>
 		<div>
-			<p>Install via Cargo from crates.io</p>
+			<p>Install with cargo-binstall</p>
+			<div class="code-block">
+				<p class="code-text">cargo binstall pace-rs</p>
+			</div>
+		</div>
+		<div>
+			<p>Install with cargo from crates.io</p>
 			<div class="code-block">
 				<p class="code-text">cargo install pace-rs</p>
+			</div>
+		</div>
+		<div>
+			<p>Install with scoop (Windows)</p>
+			<div class="code-block">
+				<p class="code-text">scoop bucket add pace https://github.com/pace-rs/pace/</p>
+				<p class="code-text">scoop install pace</p>
 			</div>
 		</div>
 		<div>
