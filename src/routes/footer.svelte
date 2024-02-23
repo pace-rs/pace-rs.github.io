@@ -82,7 +82,7 @@
 		background-color: var(--accent-4);
 	}
 	.footer-nav {
-		padding-inline: 1rem;
+		padding-left: 2rem;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
@@ -147,6 +147,7 @@
 		}
 		.footer-nav {
 			padding-top: 2rem;
+			padding-left: 0;
 		}
 		.logo-text {
 			font-size: 2rem;

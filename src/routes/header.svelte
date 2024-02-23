@@ -20,8 +20,6 @@
 
 <style>
 	nav {
-		justify-content: space-between;
-		/* position: relative; */
 		padding-block: var(--size-4);
 	}
 	a {
@@ -33,27 +31,11 @@
 		align-items: space-between;
 		margin-top: 2.75rem;
 		margin-bottom: 1rem;
-		gap: 1rem;
 		border-radius: var(--size-2);
 		background-image: var(--gradient-button);
 		box-shadow:
 			30px 30px 24px var(--box-shadow-1),
 			-20px -20px 24px var(--box-shadow-2);
-	}
-	@media (min-width: 770px) {
-		nav {
-			display: flex;
-			justify-content: space-between;
-		}
-		.cta {
-			grid-template-columns: repeat(4, 1fr);
-			gap: 0;
-		}
-	}
-	@media (max-width: 770px) {
-		.toggle-grid {
-			padding-block: 2rem;
-		}
 	}
 	.toggle-grid {
 		display: grid;
@@ -70,6 +52,24 @@
 			30px 30px 24px var(--box-shadow-1),
 			-20px -20px 24px var(--box-shadow-2);
 	}
+
+	@media (min-width: 770px) {
+		nav {
+			display: flex;
+			justify-content: space-between;
+		}
+		.cta {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 	@media (max-width: 770px) {
+		.cta {
+			grid-template-columns: 1fr 1fr;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+		.toggle-grid {
+			padding-block: 2rem;
+		}
 	}
 </style>
