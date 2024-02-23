@@ -31,7 +31,7 @@
 <footer class="bottom-bar">
 	<div class="footer-nav">
 		<a href={config.docs}>Docs</a>
-		<a href="{base}/"><DiscordLogo size={32} /></a>
+		<a href={config.discord}><DiscordLogo size={32} /></a>
 		<a href={config.github}><GithubLogo size={32} /> </a>
 	</div>
 	<div class="tag-grid">

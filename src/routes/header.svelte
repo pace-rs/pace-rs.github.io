@@ -13,7 +13,7 @@
 	<div class="cta">
 		<Toggle />
 		<button class="toggle-grid"><a href={config.docs}>Docs</a></button>
-		<button class="toggle-grid"><DiscordLogo size={32} /></button>
+		<button class="toggle-grid"><a href={config.discord}><DiscordLogo size={32} /></a></button>
 		<button class="toggle-grid"><a href={config.github}><GithubLogo size={32} /></a></button>
 	</div>
 </nav>
