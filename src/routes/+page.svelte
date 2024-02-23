@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Accents from '$lib/components/accents.svelte';
+	import { description } from '$lib/config';
 </script>
 
 <div class="grid">
@@ -9,7 +10,7 @@
 		<p class="fade-3 title">PACE</p>
 		<p class="fade-4 title">PACE</p>
 	</div>
-	<p class="sub-head">Track your time via the command line</p>
+	<p class="sub-head">{description}</p>
 </div>
 
 <div>
@@ -17,20 +18,131 @@
 		<Accents />
 	</div>
 	<div class="card-bg">
-		<h2 class="card-heading">Easy Install via Cargo</h2>
+		<h2 class="card-heading">Install PACE</h2>
 		<div>
-			<p>Run this command in your project directory</p>
+			<p>Install via Cargo from crates.io</p>
 			<div class="code-block">
-				<p class="code-text">
-					<span style="color: var(--brand-2);">user@project:~$</span>
-					cargo add pace -rs
-				</p>
+				<p class="code-text">cargo install pace-rs</p>
 			</div>
 		</div>
 		<div>
-			<p>Or, add the following to your cargo.toml</p>
+			<p>Install prebuilt binaries via shell script (Bash)</p>
 			<div class="code-block">
-				<p>pace-rs = “0,3.0”</p>
+				<p class="code-text">
+					curl --proto '=https' --tlsv1.2 -LsSf
+					https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-installer.sh | sh
+				</p>
+			</div>
+			<p>Install prebuilt binaries via shell script (Powershell)</p>
+			<div class="code-block">
+				<p class="code-text">
+					irm https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-installer.ps1
+					| iex
+				</p>
+			</div>
+			<p>Download pre-built PACE v0.7.1 from Github Releases</p>
+			<div class="download-box">
+				<table>
+					<thead>
+						<tr>
+							<th>File</th>
+							<th>Platform</th>
+							<th>Checksum</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-aarch64-apple-darwin.tar.xz"
+									>pace-rs-aarch64-apple-darwin.tar.xz</a
+								></td
+							>
+							<td>Apple Silicon macOS</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-aarch64-apple-darwin.tar.xz.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-apple-darwin.tar.xz"
+									>pace-rs-x86_64-apple-darwin.tar.xz</a
+								></td
+							>
+							<td>Intel macOS</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-apple-darwin.tar.xz.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.zip"
+									>pace-rs-x86_64-pc-windows-msvc.zip</a
+								></td
+							>
+							<td>x64 Windows</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.zip.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.msi"
+									>pace-rs-x86_64-pc-windows-msvc.msi</a
+								></td
+							>
+							<td>x64 Windows</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.msi.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-gnu.tar.xz"
+									>pace-rs-x86_64-unknown-linux-gnu.tar.xz</a
+								></td
+							>
+							<td>x64 Linux</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-gnu.tar.xz.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+						<tr>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-musl.tar.xz"
+									>pace-rs-x86_64-unknown-linux-musl.tar.xz</a
+								></td
+							>
+							<td>x64 MUSL Linux</td>
+							<td
+								><a
+									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-musl.tar.xz.sha256"
+									>checksum</a
+								></td
+							>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
