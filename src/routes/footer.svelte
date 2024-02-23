@@ -12,7 +12,9 @@
 				copyright &copy <span class="highlight"><a href="{base}/">PACE</a></span>
 				{new Date().getFullYear()} // all rights reserved
 			</p>
-			<p>app: <span class="highlight">Simonsan</span></p>
+			<p>
+				pace-rs: <span class="highlight"><a href="https://github.com/simonsan">simonsan</a></span>
+			</p>
 			<p>
 				front end: <span class="highlight"><a href="https://space-shift.com">SPACEshift</a></span>
 			</p>
