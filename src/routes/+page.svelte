@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Accents from '$lib/components/accents.svelte';
 	import PageHero from '$lib/components/page_hero.svelte';
+	import Downloads from '$lib/components/downloads.svelte';
 </script>
 
 <PageHero />
@@ -45,109 +46,7 @@
 				</p>
 			</div>
 			<p>Download pre-built PACE v0.7.1 from Github Releases</p>
-			<div class="download-box">
-				<table>
-					<thead>
-						<tr>
-							<th>File</th>
-							<th>Platform</th>
-							<th>Checksum</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-aarch64-apple-darwin.tar.xz"
-									>pace-rs-aarch64-apple-darwin.tar.xz</a
-								></td
-							>
-							<td>Apple Silicon macOS</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-aarch64-apple-darwin.tar.xz.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-apple-darwin.tar.xz"
-									>pace-rs-x86_64-apple-darwin.tar.xz</a
-								></td
-							>
-							<td>Intel macOS</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-apple-darwin.tar.xz.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.zip"
-									>pace-rs-x86_64-pc-windows-msvc.zip</a
-								></td
-							>
-							<td>x64 Windows</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.zip.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.msi"
-									>pace-rs-x86_64-pc-windows-msvc.msi</a
-								></td
-							>
-							<td>x64 Windows</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-pc-windows-msvc.msi.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-gnu.tar.xz"
-									>pace-rs-x86_64-unknown-linux-gnu.tar.xz</a
-								></td
-							>
-							<td>x64 Linux</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-gnu.tar.xz.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-						<tr>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-musl.tar.xz"
-									>pace-rs-x86_64-unknown-linux-musl.tar.xz</a
-								></td
-							>
-							<td>x64 MUSL Linux</td>
-							<td
-								><a
-									href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-x86_64-unknown-linux-musl.tar.xz.sha256"
-									>checksum</a
-								></td
-							>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			<Downloads />
 		</div>
 	</div>
 
@@ -181,7 +80,7 @@
 		z-index: 7;
 	}
 	.card-bg p {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 	.card-heading {
 		font-size: 4rem;
@@ -206,6 +105,8 @@
 		.card-bg {
 			border-radius: 36px;
 			margin: 1rem;
+			padding-inline: 0.5rem;
+			margin: 0;
 		}
 		.card-bg p {
 			font-size: 1rem;

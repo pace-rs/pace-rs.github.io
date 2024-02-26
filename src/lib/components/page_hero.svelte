@@ -55,7 +55,7 @@
 		position: absolute;
 		top: 24px;
 		left: 0px;
-		color: var(--surface-1);
+		color: var(--accent-6);
 		z-index: 3;
 	}
 	@media (max-width: 770px) {

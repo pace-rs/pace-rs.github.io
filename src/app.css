@@ -27,8 +27,9 @@ html {
 	--accent-3-dark: hsl(193 43% 35% / 0.8);
 	--accent-4-dark: hsl(220 16% 36%);
 	--accent-5-dark: hsl(192 55% 64%);
+	--accent-6-dark: hsl(193 43% 25%);
 
-	--surface-1-dark: hsl(193 43% 25%);
+	--surface-1-dark: hsl(220 16% 48%);
 	--surface-2-dark: hsl(220 16% 36%);
 	--surface-3-dark: hsl(222 16% 28%);
 	--surface-4-dark: hsl(223 12% 12% / 0.8);
@@ -61,8 +62,9 @@ html {
 	--accent-3-light: hsl(92 28% 32% / 0.8);
 	--accent-4-light: hsl(94 16% 30% / 0.8);
 	--accent-5-light: hsl(213 32% 52%);
+	--accent-6-light: hsl(92 28% 22%);
 
-	--surface-1-light: hsl(92 28% 22%);
+	--surface-1-light: hsl(220 16% 48%);
 	--surface-2-light: hsl(222 16% 28%);
 	--surface-3-light: hsl(220 16% 36%);
 	--surface-4-light: hsl(92 28% 65% / 0.9);
@@ -94,6 +96,7 @@ html {
 	--accent-3: var(--accent-3-dark);
 	--accent-4: var(--accent-4-dark);
 	--accent-5: var(--accent-5-dark);
+	--accent-6: var(--accent-6-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
@@ -127,6 +130,7 @@ html {
 		--accent-3: var(--accent-3-light);
 		--accent-4: var(--accent-4-light);
 		--accent-5: var(--accent-5-light);
+		--accent-6: var(--accent-6-light);
 		--surface-1: var(--surface-1-light);
 		--surface-2: var(--surface-2-light);
 		--surface-3: var(--surface-3-light);
@@ -160,6 +164,7 @@ html {
 	--accent-3: var(--accent-3-dark);
 	--accent-4: var(--accent-4-dark);
 	--accent-5: var(--accent-5-dark);
+	--accent-6: var(--accent-6-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
@@ -192,6 +197,7 @@ html {
 	--accent-3: var(--accent-3-light);
 	--accent-4: var(--accent-4-light);
 	--accent-5: var(--accent-5-light);
+	--accent-6: var(--accent-6-light);
 	--surface-1: var(--surface-1-light);
 	--surface-2: var(--surface-2-light);
 	--surface-3: var(--surface-3-light);
@@ -245,4 +251,8 @@ li {
 .title {
 	font-family: var(--font-title);
 	letter-spacing: 0.05em;
+}
+
+a {
+	color: inherit;
 }
