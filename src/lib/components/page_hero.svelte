@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { description } from '$lib/config';
-</script>
-
 <div class="grid">
 	<div class="fade">
 		<p class="fade-1 title">PACE</p>
@@ -9,7 +5,7 @@
 		<p class="fade-3 title">PACE</p>
 		<p class="fade-4 title">PACE</p>
 	</div>
-	<p class="sub-head">{description}</p>
+	<p class="sub-head">Track your time from the command line</p>
 </div>
 
 <style>

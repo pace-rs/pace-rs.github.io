@@ -10,10 +10,10 @@
 	<meta property="og:description" content="${description}" />
 	<meta property="og:url" content="https://pace.cli.rs/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://pace.cli.rs/Pace-Facebook-Card.png" />
+	<!-- <meta property="og:image" content="https://pace.cli.rs/Pace-Facebook-Card.png" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="1280" />
-	<meta property="og:image:height" content="627" />
+	<meta property="og:image:height" content="627" /> -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="https://pace.cli.rs/Pace-Square-Logo.png" />
 	<meta name="og:image" content="https://pace.cli.rs/Pace-Square-Logo.png" />
