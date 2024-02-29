@@ -36,17 +36,17 @@
 			<div class="code-block">
 				<p class="code-text">
 					curl --proto '=https' --tlsv1.2 -LsSf
-					https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-installer.sh | sh
+					https://github.com/pace-rs/pace/releases/download/pace-rs-v0.9.0/pace-rs-installer.sh | sh
 				</p>
 			</div>
 			<p>Install prebuilt binaries via shell script (Powershell)</p>
 			<div class="code-block">
 				<p class="code-text">
-					irm https://github.com/pace-rs/pace/releases/download/pace-rs-v0.7.1/pace-rs-installer.ps1
+					irm https://github.com/pace-rs/pace/releases/download/pace-rs-v0.9.0/pace-rs-installer.ps1
 					| iex
 				</p>
 			</div>
-			<p>Download pre-built PACE v0.7.1 from Github Releases</p>
+			<p>Download pre-built PACE v0.9.0 from Github Releases</p>
 			<Downloads />
 		</div>
 	</div>
