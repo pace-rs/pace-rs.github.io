@@ -2,6 +2,7 @@
 	import Accents from '$lib/components/accents.svelte';
 	import PageHero from '$lib/components/page_hero.svelte';
 	import Downloads from '$lib/components/downloads.svelte';
+	import Seo from '$lib/components/seo.svelte';
 </script>
 
 <PageHero />
@@ -54,6 +55,8 @@
 		<Accents />
 	</div>
 </div>
+
+<Seo />
 
 <style>
 	.squares {
