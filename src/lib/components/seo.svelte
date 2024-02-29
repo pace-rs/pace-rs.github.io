@@ -11,13 +11,13 @@
 	<meta property="og:url" content="https://pace.cli.rs/" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://pace.cli.rs/Pace-Facebook-Card.png" />
+	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="1280" />
 	<meta property="og:image:height" content="627" />
 	<meta property="og:image" content="https://pace.cli.rs/Pace-Square-Logo.png" />
+	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="400" />
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:image" content="https://pace.cli.rs/Pace-Twitter-Card.png" />
 
 	{@html `<script type="application/ld+json">
 		{
