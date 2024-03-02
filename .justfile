@@ -11,7 +11,7 @@
 
 # Loads .env file for variables to be used in
 # in this just file 
-# set dotenv-load
+set dotenv-load
 
 default:
     just --choose
@@ -27,5 +27,6 @@ set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
 # Set shell for non-Windows OSs:
 set shell := ["bash", "-uc"]
 
-update-scoop-manifest *ARGS:
-	@sd {{ARGS}} $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) src/lib/components/downloads.svelte
+update-pace-version:
+	sd $env:PACE_CURRENT_VERSION $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) src/lib/components/downloads.svelte
+	sd $env:PACE_CURRENT_VERSION $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) .env
