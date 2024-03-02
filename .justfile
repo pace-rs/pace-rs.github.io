@@ -29,4 +29,5 @@ set shell := ["bash", "-uc"]
 
 update-pace-version:
 	sd $env:PACE_CURRENT_VERSION $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) src/lib/components/downloads.svelte
+    sd $env:PACE_CURRENT_VERSION $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) src/routes/+page.svelte
 	sd $env:PACE_CURRENT_VERSION $(xh get https://crates.io/api/v1/crates/pace-rs | jq .crate.max_version) .env
