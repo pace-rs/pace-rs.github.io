@@ -5,67 +5,67 @@
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-aarch64-apple-darwin.tar.xz"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-aarch64-apple-darwin.tar.xz"
 		>pace-rs-aarch64-apple-darwin.tar.xz</a
 	>
 	<p>Apple Silicon macOS</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-aarch64-apple-darwin.tar.xz.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-aarch64-apple-darwin.tar.xz.sha256"
 		>checksum</a
 	>
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-apple-darwin.tar.xz"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-apple-darwin.tar.xz"
 		>pace-rs-x86_64-apple-darwin.tar.xz</a
 	>
 	<p>Intel macOS</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-apple-darwin.tar.xz.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-apple-darwin.tar.xz.sha256"
 		>checksum</a
 	>
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-pc-windows-msvc.zip"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-pc-windows-msvc.zip"
 		>pace-rs-x86_64-pc-windows-msvc.zip</a
 	>
 	<p>x64 Windows</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-pc-windows-msvc.zip.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-pc-windows-msvc.zip.sha256"
 		>checksum</a
 	>
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-pc-windows-msvc.msi"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-pc-windows-msvc.msi"
 		>pace-rs-x86_64-pc-windows-msvc.msi</a
 	>
 	<p>x64 Windows</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-pc-windows-msvc.msi.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-pc-windows-msvc.msi.sha256"
 		>checksum</a
 	>
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-unknown-linux-gnu.tar.xz"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-unknown-linux-gnu.tar.xz"
 		>pace-rs-x86_64-unknown-linux-gnu.tar.xz</a
 	>
 	<p>x64 Linux</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-unknown-linux-gnu.tar.xz.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-unknown-linux-gnu.tar.xz.sha256"
 		>checksum</a
 	>
 </div>
 <div class="version grid">
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-unknown-linux-musl.tar.xz"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-unknown-linux-musl.tar.xz"
 		>pace-rs-x86_64-unknown-linux-musl.tar.xz</a
 	>
 	<p>x64 MUSL Linux</p>
 	<a
-		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.12.0/pace-rs-x86_64-unknown-linux-musl.tar.xz.sha256"
+		href="https://github.com/pace-rs/pace/releases/download/pace-rs-v0.13.0/pace-rs-x86_64-unknown-linux-musl.tar.xz.sha256"
 		>checksum</a
 	>
 </div>
