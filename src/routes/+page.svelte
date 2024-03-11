@@ -21,7 +21,7 @@
 		<div>
 			<p>Install with cargo from crates.io</p>
 			<div class="code-block">
-				<p class="code-text">cargo install pace-rs</p>
+				<p class="code-text">cargo install pace-rs --locked</p>
 			</div>
 		</div>
 		<div>
